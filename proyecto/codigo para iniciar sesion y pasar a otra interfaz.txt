@@ -1,0 +1,21 @@
+
+//debajo de la zona del boton
+
+	//declaracion de variables
+	String Usuario="admin";
+       	String Contraseña="123";
+       
+       String Pass=new String (jPassword.getPassword());
+       
+	//condicion nombre de textField = usuario	nombre de variable pass= contraseña
+       if (jTextField_User.getText().equals(Usuario)&& Pass.equals(Contraseña)){
+           
+           Seleccion se=new Seleccion ();
+           se.setVisible(true);
+	//para que se cierre la bentana 1
+           dispose();
+
+	}
+	 else
+	// para informar que alguno de los datos no son o es correcto
+	 JOptionPane.showMessageDialog(this, "Usuario / Contraseña incorrecta");
